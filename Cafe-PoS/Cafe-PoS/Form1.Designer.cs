@@ -37,6 +37,7 @@
             this.txtPasswordIN = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnSignUp = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.MainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BG)).BeginInit();
             this.SuspendLayout();
@@ -215,6 +216,7 @@
         private System.Windows.Forms.Label txtUsername;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnSignUp;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
