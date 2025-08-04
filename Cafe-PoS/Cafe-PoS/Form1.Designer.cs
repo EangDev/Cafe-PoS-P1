@@ -96,6 +96,8 @@
             this.txtUsernameIN.Font = new System.Drawing.Font("Noto Sans SC", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsernameIN.ForeColor = System.Drawing.Color.White;
             this.txtUsernameIN.Location = new System.Drawing.Point(28, 201);
+            this.txtUsernameIN.Margin = new System.Windows.Forms.Padding(5);
+            this.txtUsernameIN.MaxLength = 250;
             this.txtUsernameIN.Name = "txtUsernameIN";
             this.txtUsernameIN.Size = new System.Drawing.Size(347, 39);
             this.txtUsernameIN.TabIndex = 2;
@@ -142,6 +144,7 @@
             this.txtPasswordIN.Font = new System.Drawing.Font("Noto Sans SC", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPasswordIN.ForeColor = System.Drawing.Color.White;
             this.txtPasswordIN.Location = new System.Drawing.Point(28, 321);
+            this.txtPasswordIN.Margin = new System.Windows.Forms.Padding(5);
             this.txtPasswordIN.MaxLength = 8;
             this.txtPasswordIN.Name = "txtPasswordIN";
             this.txtPasswordIN.PasswordChar = '*';
@@ -171,6 +174,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
+            this.btnSignUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSignUp.FlatAppearance.BorderSize = 0;
             this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignUp.Font = new System.Drawing.Font("Noto Sans SC", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
