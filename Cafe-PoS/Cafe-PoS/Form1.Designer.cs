@@ -29,15 +29,14 @@
         private void InitializeComponent()
         {
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.BG = new System.Windows.Forms.PictureBox();
-            this.txtPos = new System.Windows.Forms.Label();
+            this.btnSignUp = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtPasswordIN = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.Label();
             this.txtUsernameIN = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.Label();
-            this.txtPasswordIN = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.btnSignUp = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.txtPos = new System.Windows.Forms.Label();
+            this.BG = new System.Windows.Forms.PictureBox();
             this.MainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BG)).BeginInit();
             this.SuspendLayout();
@@ -58,34 +57,73 @@
             this.MainPanel.Size = new System.Drawing.Size(800, 550);
             this.MainPanel.TabIndex = 0;
             // 
-            // BG
+            // btnSignUp
             // 
-            this.BG.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnSignUp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.BG.Image = global::Cafe_PoS.Properties.Resources.Cafe_LoginBG1;
-            this.BG.Location = new System.Drawing.Point(0, 0);
-            this.BG.Name = "BG";
-            this.BG.Size = new System.Drawing.Size(800, 550);
-            this.BG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BG.TabIndex = 0;
-            this.BG.TabStop = false;
+            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
+            this.btnSignUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSignUp.FlatAppearance.BorderSize = 0;
+            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignUp.Font = new System.Drawing.Font("Noto Sans SC", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUp.ForeColor = System.Drawing.Color.White;
+            this.btnSignUp.Location = new System.Drawing.Point(28, 477);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(250, 70);
+            this.btnSignUp.TabIndex = 3;
+            this.btnSignUp.Text = "Sign Up!";
+            this.btnSignUp.UseVisualStyleBackColor = false;
             // 
-            // txtPos
+            // btnLogin
             // 
-            this.txtPos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPos.AutoSize = true;
-            this.txtPos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
-            this.txtPos.Font = new System.Drawing.Font("Noto Sans SC", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPos.ForeColor = System.Drawing.Color.White;
-            this.txtPos.Location = new System.Drawing.Point(258, 9);
-            this.txtPos.Name = "txtPos";
-            this.txtPos.Size = new System.Drawing.Size(284, 79);
-            this.txtPos.TabIndex = 1;
-            this.txtPos.Text = "Cafe-POS";
-            this.txtPos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(82)))), ((int)(((byte)(120)))));
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Noto Sans SC", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(28, 404);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(250, 70);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            // 
+            // txtPasswordIN
+            // 
+            this.txtPasswordIN.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPasswordIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(67)))), ((int)(((byte)(100)))));
+            this.txtPasswordIN.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPasswordIN.Font = new System.Drawing.Font("Noto Sans SC", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasswordIN.ForeColor = System.Drawing.Color.White;
+            this.txtPasswordIN.Location = new System.Drawing.Point(28, 321);
+            this.txtPasswordIN.Margin = new System.Windows.Forms.Padding(5);
+            this.txtPasswordIN.MaxLength = 8;
+            this.txtPasswordIN.Name = "txtPasswordIN";
+            this.txtPasswordIN.PasswordChar = '*';
+            this.txtPasswordIN.Size = new System.Drawing.Size(347, 39);
+            this.txtPasswordIN.TabIndex = 2;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPassword.AutoSize = true;
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
+            this.txtPassword.Font = new System.Drawing.Font("Noto Sans SC", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.White;
+            this.txtPassword.Location = new System.Drawing.Point(28, 264);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(184, 49);
+            this.txtPassword.TabIndex = 1;
+            this.txtPassword.Text = "Password";
+            this.txtPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtUsernameIN
             // 
@@ -119,73 +157,34 @@
             this.txtUsername.Text = "Username";
             this.txtUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtPassword
+            // txtPos
             // 
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtPos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.AutoSize = true;
-            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
-            this.txtPassword.Font = new System.Drawing.Font("Noto Sans SC", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.ForeColor = System.Drawing.Color.White;
-            this.txtPassword.Location = new System.Drawing.Point(28, 264);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(184, 49);
-            this.txtPassword.TabIndex = 1;
-            this.txtPassword.Text = "Password";
-            this.txtPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtPos.AutoSize = true;
+            this.txtPos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
+            this.txtPos.Font = new System.Drawing.Font("Noto Sans SC", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPos.ForeColor = System.Drawing.Color.White;
+            this.txtPos.Location = new System.Drawing.Point(258, 9);
+            this.txtPos.Name = "txtPos";
+            this.txtPos.Size = new System.Drawing.Size(284, 79);
+            this.txtPos.TabIndex = 1;
+            this.txtPos.Text = "Cafe-POS";
+            this.txtPos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtPasswordIN
+            // BG
             // 
-            this.txtPasswordIN.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.BG.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPasswordIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(67)))), ((int)(((byte)(100)))));
-            this.txtPasswordIN.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPasswordIN.Font = new System.Drawing.Font("Noto Sans SC", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPasswordIN.ForeColor = System.Drawing.Color.White;
-            this.txtPasswordIN.Location = new System.Drawing.Point(28, 321);
-            this.txtPasswordIN.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPasswordIN.MaxLength = 8;
-            this.txtPasswordIN.Name = "txtPasswordIN";
-            this.txtPasswordIN.PasswordChar = '*';
-            this.txtPasswordIN.Size = new System.Drawing.Size(347, 39);
-            this.txtPasswordIN.TabIndex = 2;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(82)))), ((int)(((byte)(120)))));
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Noto Sans SC", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(28, 404);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(250, 70);
-            this.btnLogin.TabIndex = 3;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            // 
-            // btnSignUp
-            // 
-            this.btnSignUp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
-            this.btnSignUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSignUp.FlatAppearance.BorderSize = 0;
-            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignUp.Font = new System.Drawing.Font("Noto Sans SC", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignUp.ForeColor = System.Drawing.Color.White;
-            this.btnSignUp.Location = new System.Drawing.Point(28, 477);
-            this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(250, 70);
-            this.btnSignUp.TabIndex = 3;
-            this.btnSignUp.Text = "Sign Up!";
-            this.btnSignUp.UseVisualStyleBackColor = false;
+            this.BG.Image = global::Cafe_PoS.Properties.Resources.Cafe_LoginBG1;
+            this.BG.Location = new System.Drawing.Point(0, 0);
+            this.BG.Name = "BG";
+            this.BG.Size = new System.Drawing.Size(800, 550);
+            this.BG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BG.TabIndex = 0;
+            this.BG.TabStop = false;
             // 
             // Login
             // 
@@ -216,7 +215,6 @@
         private System.Windows.Forms.Label txtUsername;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnSignUp;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
