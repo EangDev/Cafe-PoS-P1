@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPasswordIN = new System.Windows.Forms.TextBox();
@@ -38,6 +37,7 @@
             this.txtUsername = new System.Windows.Forms.Label();
             this.txtPos = new System.Windows.Forms.Label();
             this.BG = new System.Windows.Forms.PictureBox();
+            this.btnExit = new Cafe_PoS.Resources.RJButton();
             this.MainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BG)).BeginInit();
             this.SuspendLayout();
@@ -58,22 +58,6 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(800, 550);
             this.MainPanel.TabIndex = 0;
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(82)))), ((int)(((byte)(120)))));
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Noto Sans SC", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = global::Cafe_PoS.Properties.Resources.switch_off1;
-            this.btnExit.Location = new System.Drawing.Point(12, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(50, 50);
-            this.btnExit.TabIndex = 4;
-            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSignUp
             // 
@@ -188,11 +172,11 @@
             this.txtPos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(48)))), ((int)(((byte)(71)))));
             this.txtPos.Font = new System.Drawing.Font("Noto Sans SC", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPos.ForeColor = System.Drawing.Color.White;
-            this.txtPos.Location = new System.Drawing.Point(258, 9);
+            this.txtPos.Location = new System.Drawing.Point(219, 12);
             this.txtPos.Name = "txtPos";
-            this.txtPos.Size = new System.Drawing.Size(284, 79);
+            this.txtPos.Size = new System.Drawing.Size(309, 79);
             this.txtPos.TabIndex = 1;
-            this.txtPos.Text = "Cafe-POS";
+            this.txtPos.Text = "Rests-POS";
             this.txtPos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BG
@@ -207,6 +191,21 @@
             this.BG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BG.TabIndex = 0;
             this.BG.TabStop = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(75)))), ((int)(((byte)(112)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = global::Cafe_PoS.Properties.Resources.switch_off1;
+            this.btnExit.Location = new System.Drawing.Point(12, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(50, 50);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
             // 
             // Login
             // 
@@ -237,7 +236,7 @@
         private System.Windows.Forms.Label txtUsername;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnSignUp;
-        private System.Windows.Forms.Button btnExit;
+        private Resources.RJButton btnExit;
     }
 }
 

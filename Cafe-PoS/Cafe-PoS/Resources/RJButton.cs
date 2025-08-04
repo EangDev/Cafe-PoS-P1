@@ -15,6 +15,7 @@ namespace Cafe_PoS.Resources
         private int borderRadius = 40;
         private Color borderColor = Color.PaleVioletRed;
 
+        //This Constructer is the style of the button
         public RJButton()
         {
             this.FlatStyle = FlatStyle.Flat;
@@ -24,6 +25,7 @@ namespace Cafe_PoS.Resources
             this.ForeColor = Color.White;
         }
 
+        //the getfigurepath method is used to create the rounded corners of the button
         private GraphicsPath GetFigurePath(RectangleF rect, float radius)
         {
             GraphicsPath path = new GraphicsPath();
@@ -36,6 +38,7 @@ namespace Cafe_PoS.Resources
             return path;
         }
 
+        //the onpaint method is used to draw the button with the border and radius
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
@@ -70,12 +73,15 @@ namespace Cafe_PoS.Resources
                 }
             }
         }
+
+        //the onhandlecreatecd method is used to handle the backcolor change of the parent container
         protected override void OnHandleCreated(EventArgs e)
         {
             base.OnHandleCreated(e);
             this.Parent.BackColorChanged += new EventHandler(Container_BackColorChanged);
         }
 
+        //the Container_BackColorChanged method is used to invalidate the button when the parent container's backcolor changes
         private void Container_BackColorChanged(object sender, EventArgs e)
         {
             if (this.DesignMode)

@@ -57,6 +57,9 @@
     <Compile Include="Resources\RJButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Resources\RJTextbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +115,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\switch-off1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cafe-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-cup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tea-cup.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
