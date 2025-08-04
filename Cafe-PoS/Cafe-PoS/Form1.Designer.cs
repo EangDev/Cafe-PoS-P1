@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPasswordIN = new System.Windows.Forms.TextBox();
@@ -44,6 +45,7 @@
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.White;
+            this.MainPanel.Controls.Add(this.btnExit);
             this.MainPanel.Controls.Add(this.btnSignUp);
             this.MainPanel.Controls.Add(this.btnLogin);
             this.MainPanel.Controls.Add(this.txtPasswordIN);
@@ -56,6 +58,22 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(800, 550);
             this.MainPanel.TabIndex = 0;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(82)))), ((int)(((byte)(120)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Noto Sans SC", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = global::Cafe_PoS.Properties.Resources.switch_off1;
+            this.btnExit.Location = new System.Drawing.Point(12, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(50, 50);
+            this.btnExit.TabIndex = 4;
+            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSignUp
             // 
@@ -74,6 +92,7 @@
             this.btnSignUp.TabIndex = 3;
             this.btnSignUp.Text = "Sign Up!";
             this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // btnLogin
             // 
@@ -91,6 +110,7 @@
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
             // 
             // txtPasswordIN
             // 
@@ -132,13 +152,16 @@
             this.txtUsernameIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(67)))), ((int)(((byte)(100)))));
             this.txtUsernameIN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsernameIN.Font = new System.Drawing.Font("Noto Sans SC", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsernameIN.ForeColor = System.Drawing.Color.White;
+            this.txtUsernameIN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtUsernameIN.Location = new System.Drawing.Point(28, 201);
             this.txtUsernameIN.MaxLength = 250;
             this.txtUsernameIN.Name = "txtUsernameIN";
             this.txtUsernameIN.Size = new System.Drawing.Size(347, 39);
             this.txtUsernameIN.TabIndex = 2;
+            this.txtUsernameIN.Text = "Admin123";
             this.txtUsernameIN.TextChanged += new System.EventHandler(this.txtUsernameIN_TextChanged);
+            this.txtUsernameIN.Enter += new System.EventHandler(this.txtUsernameIN_TextChanged);
+            this.txtUsernameIN.Leave += new System.EventHandler(this.txtUsernameIN_TextChanged);
             // 
             // txtUsername
             // 
@@ -214,6 +237,7 @@
         private System.Windows.Forms.Label txtUsername;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnSignUp;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
