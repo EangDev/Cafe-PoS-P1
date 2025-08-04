@@ -12,6 +12,7 @@ namespace Cafe_PoS
 {
     public partial class Login : Form
     {
+
         public Login()
         {
             InitializeComponent();
@@ -19,6 +20,17 @@ namespace Cafe_PoS
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
+
+        }
+
+        private void txtUsernameIN_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
 
         }
     }

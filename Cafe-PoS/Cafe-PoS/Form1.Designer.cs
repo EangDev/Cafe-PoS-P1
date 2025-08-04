@@ -102,7 +102,6 @@
             this.txtPasswordIN.Font = new System.Drawing.Font("Noto Sans SC", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPasswordIN.ForeColor = System.Drawing.Color.White;
             this.txtPasswordIN.Location = new System.Drawing.Point(28, 321);
-            this.txtPasswordIN.Margin = new System.Windows.Forms.Padding(5);
             this.txtPasswordIN.MaxLength = 8;
             this.txtPasswordIN.Name = "txtPasswordIN";
             this.txtPasswordIN.PasswordChar = '*';
@@ -135,11 +134,11 @@
             this.txtUsernameIN.Font = new System.Drawing.Font("Noto Sans SC", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsernameIN.ForeColor = System.Drawing.Color.White;
             this.txtUsernameIN.Location = new System.Drawing.Point(28, 201);
-            this.txtUsernameIN.Margin = new System.Windows.Forms.Padding(5);
             this.txtUsernameIN.MaxLength = 250;
             this.txtUsernameIN.Name = "txtUsernameIN";
             this.txtUsernameIN.Size = new System.Drawing.Size(347, 39);
             this.txtUsernameIN.TabIndex = 2;
+            this.txtUsernameIN.TextChanged += new System.EventHandler(this.txtUsernameIN_TextChanged);
             // 
             // txtUsername
             // 
